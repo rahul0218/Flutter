@@ -7,8 +7,6 @@ void main() {
 
 // ParentWidget manages the state for TapboxB.
 
-//------------------------ ParentWidget --------------------------------
-
 class ParentWidget extends StatefulWidget {
   @override
   _ParentWidgetState createState() => _ParentWidgetState();
@@ -34,8 +32,6 @@ class _ParentWidgetState extends State<ParentWidget> {
   }
 }
 
-//------------------------- TapboxB ----------------------------------
-
 class TapboxB extends StatelessWidget {
   TapboxB({Key key, this.active: false, @required this.onChanged})
       : super(key: key);
@@ -47,6 +43,7 @@ class TapboxB extends StatelessWidget {
     onChanged(!active);
   }
 
+  @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: _handleTap,
@@ -60,7 +57,7 @@ class TapboxB extends StatelessWidget {
         width: 200.0,
         height: 200.0,
         decoration: BoxDecoration(
-          color: active ? Colors.lightGreen[700] : Colors.grey[600],
+          color: active ? Colors.lightBlue[700] : Colors.green[600],
         ),
       ),
     );
@@ -72,7 +69,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: Scaffold(appBar: AppBar(title: Text('Example of Parent Widget Manages State')),body: Center(child: ParentWidget(),),),
+      home: Scaffold(
+        appBar: AppBar(title: Text('Example of Parent Widget Manages State')),
+        body: Center(
+          child: ParentWidget(),
+        ),
+      ),
     );
   }
 }
