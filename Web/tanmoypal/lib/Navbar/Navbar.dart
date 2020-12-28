@@ -18,18 +18,15 @@ class  Navbar extends StatelessWidget {
 class DesktopNavbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(padding: const EdgeInsets.symmetric(vertical: 20, horizontal:40),
+    return Padding(padding: const EdgeInsets.symmetric(vertical: 20, horizontal:60),
     child: Container(
       constraints: BoxConstraints(maxWidth: 1200),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-        Text("Tanmoy", style: TextStyle(
-          fontWeight:FontWeight.bold,
-          color: Colors.black,
-          fontSize: 30,
-         ),
-         ),
+          Image.asset("assets/images/logo.png",),
+        
+        
          Row(
            children: [
               Text("Resume", style: TextStyle(color:Colors.black),),
