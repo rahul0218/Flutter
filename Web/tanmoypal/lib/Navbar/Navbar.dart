@@ -20,7 +20,6 @@ class DesktopNavbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(padding: const EdgeInsets.symmetric(vertical: 20, horizontal:60),
     child: Container(
-      constraints: BoxConstraints(maxWidth: 1200),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
@@ -45,8 +44,22 @@ class DesktopNavbar extends StatelessWidget {
 class MobileNavbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal:60),
+      child: Column(children: [
+        Image.asset("assets/images/logo.png",),
+        
+        
+         Row(
+           mainAxisAlignment: MainAxisAlignment.center,
+           children: [
+              Text("Resume", style: TextStyle(color:Colors.black),),
+              SizedBox(width:30,),
+              Text("Work", style: TextStyle(color:Colors.black),),
+              
+              
+         ],)
+      ],),
     );
   }
 }
