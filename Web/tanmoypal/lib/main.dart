@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tanmoypal/Navbar/Footer.dart';
 import 'package:tanmoypal/Navbar/Navbar.dart';
+import 'package:tanmoypal/LandingPage/Home.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,7 +28,7 @@ class MyHomePage extends StatelessWidget {
       body: Container(
         
         child: Column(
-          children: <Widget>[Navbar(),Footer()],
+          children: <Widget>[Navbar(),Home()],
         ),
       ),
     );
