@@ -7,23 +7,26 @@ class Home extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 90, horizontal: 150),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
-          
           children: [
-            Text(
-              "User Experience ",
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 40.0,
-                  color: Colors.black),
+            Column(
+              children:[ 
+                Text(
+                "User Experience ",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 40.0,
+                    color: Colors.black),
+              ),
+              ]
             ),
             Image.asset(
               "assets/images/Designercp.png",
               height: 50,
               width: 200,
-              
             ),
             
           ],
+          
         ),
         
       )
