@@ -3,27 +3,29 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   List<Widget> pageChildren() {
     return <Widget>[
-      Container(
-        
-        child: Column(
+      Padding(
+        padding: const EdgeInsets.symmetric(vertical: 90, horizontal: 150),
+        child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           
           children: [
             Text(
-              "User Experience",
+              "User Experience ",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 40.0,
                   color: Colors.black),
             ),
             Image.asset(
-              "assets/images/logo@2x.png",
-              height: 100,
-              width: 100,
+              "assets/images/Designercp.png",
+              height: 50,
+              width: 200,
+              
             ),
-            Text("Tanmoy Pal")
+            
           ],
         ),
+        
       )
     ];
   }
@@ -34,7 +36,7 @@ class Home extends StatelessWidget {
       builder: (context, constraints) {
         if (constraints.maxWidth > 800) {
           return Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: pageChildren(),
           );
         } else {

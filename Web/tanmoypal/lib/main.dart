@@ -28,7 +28,7 @@ class MyHomePage extends StatelessWidget {
       body: Container(
         
         child: Column(
-          children: <Widget>[Navbar(),Home()],
+          children: <Widget>[Navbar(),Home(),Footer()],
         ),
       ),
     );
