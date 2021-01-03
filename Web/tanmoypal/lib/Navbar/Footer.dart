@@ -48,10 +48,12 @@ class DesktopFooter extends StatelessWidget {
         OutlineButton(
           borderSide: BorderSide(
           color: Colors.blue,),
+          textColor: Colors.blue,
           onPressed: () {},
           child: const Text(
             'Hire Me',
-            style: TextStyle(fontSize: 12)
+            style: TextStyle(fontSize: 12),
+            
           ),
           
         ),
