@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 
 Widget headingSection = Container(
+  
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
+        
+         
         Text(
           "User Experience ",
           style: TextStyle(
               fontWeight: FontWeight.bold, fontSize: 40.0, color: Colors.black),
         ),
+        
         Image.asset(
           "assets/images/Designercp.png",
           height: 50,
@@ -16,21 +20,23 @@ Widget headingSection = Container(
         ),
       ],
     ),
+  
   );
 
   Widget nameSection = Container(
     child: Text("Tanmoy Pal"),
   );
-  Widget textSection = Padding(
+  Widget textSection = Container(
     
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 60),
+      
       child:  
         Text('I have always been intrigued by the psychology behind people’s problems and behaviours.' 
       'This particular interest to pursue a career in UX. I am interested in learning more about how feelings,' 
       'thoughts, and actions can be improved by good design. “Design is about 3 dimensions and 5 senses.” - Danielle Sacks',
-      ),
-    
+      
+        overflow: TextOverflow.ellipsis,),
   );
+  
 
 
 class Home extends StatelessWidget {

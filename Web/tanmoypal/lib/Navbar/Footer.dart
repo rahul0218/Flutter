@@ -26,29 +26,36 @@ class DesktopFooter extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           
           children: <Widget>[
-            Image.asset(
-              "assets/images/logo@2x.png",
-              height: 100,
-              width: 100,
-            ),
             Row(
               children: [
                 Text(
-                  "Resume",
+                  "Linkdin",
                   style: TextStyle(color: Colors.black),
                 ),
                 SizedBox(
                   width: 60,
                 ),
                 Text(
-                  "Work",
+                  "About Me",
                   style: TextStyle(color: Colors.black),
                 ),
                 SizedBox(
                   width: 60,
                 ),
               ],
-            )
+            ),
+            const SizedBox(height: 30),
+        OutlineButton(
+          borderSide: BorderSide(
+          color: Colors.blue,),
+          onPressed: () {},
+          child: const Text(
+            'Hire Me',
+            style: TextStyle(fontSize: 12)
+          ),
+          
+        ),
+            
           
           ],
         ),
