@@ -4,6 +4,7 @@ class NavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.blue,
       height: 100,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tanmoy1/widgets/centered_view/centered_view.dart';
+import 'package:tanmoy1/widgets/containt_details/containt_details.dart';
 import 'package:tanmoy1/widgets/navigation_bar/navigation_bar.dart';
 
 class HomeView extends StatelessWidget {
@@ -11,7 +12,10 @@ class HomeView extends StatelessWidget {
         child:Column(
         children: [
           
-          NavigationBar()
+          NavigationBar(),
+          Expanded(child: Row(children: [
+            ContaintDetails()
+          ],),)
         ],),
       ),
     );
