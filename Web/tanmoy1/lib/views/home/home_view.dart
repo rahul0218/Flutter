@@ -18,7 +18,8 @@ class HomeView extends StatelessWidget {
                 mobile: HomeContentMobile(),
                 desktop: HomeContentMobile(),
               )
-            )
+            ),
+            NavigationBar(),
           ],
         ),
       ),

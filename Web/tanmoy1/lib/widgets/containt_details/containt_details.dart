@@ -4,10 +4,10 @@ class ContaintDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 90, vertical: 95),
+      padding: const EdgeInsets.symmetric(horizontal: 90, vertical:5),
       alignment: Alignment.topCenter,
       width: 1200,
-      color: Colors.blue,
+      color: Colors.white,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
