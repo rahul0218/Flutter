@@ -13,11 +13,18 @@ class ContaintDetails extends StatelessWidget {
         children: [
           Row(
             children: [
+              Expanded(child: 
               Text(
                 'Use Experiance ',
                 style: TextStyle(
                     fontWeight: FontWeight.w100, height: 0.9, fontSize: 80),
               ),
+              ),
+              
+            ],
+          ),
+          Row(
+            children: [
               Image.asset(
                 "assets/images/Designercp.png",
                 height: 80,
@@ -28,10 +35,11 @@ class ContaintDetails extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
+          Row( children:[
           Text(
             'Tanmoy Pal',
             style: TextStyle(fontSize: 21, height: 1.7),
-          ),
+          ),]),
           SizedBox(
             height: 50,
           ),
